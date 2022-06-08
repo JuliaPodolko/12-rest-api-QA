@@ -11,9 +11,8 @@ public class ReqresinTestsHomework {
 
     @Test
     void listUsers() {
-        String body = "";
+
         given()
-                .body(body)
                 .contentType(JSON)
                 .when()
                 .get("https://reqres.in/api/users?page=2")
